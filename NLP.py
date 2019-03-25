@@ -5,16 +5,14 @@ def Mergeall():
 # Read in all the txt files classified by male and female
     for i in range(1,18):
         with open('female'+str(i)+'.txt','r') as f:
-            female.extend([(item) for item in (f)])
-            
+            female.extend([(item) for item in (f)])          
     for i in range(1,18):
         with open('male'+str(i)+'.txt','r') as m:
             male.extend([(item) for item in (m)])
 # Format the items
     for i,item in enumerate(female):
         if item[0] == 'A':
-            female[i] = "She's " + item
-            
+            female[i] = "She's " + item 
     for i,item in enumerate(male):
         if item[0] != 'H':
             male[i] = "He's " + item
