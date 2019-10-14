@@ -58,7 +58,7 @@ def mostcommon(male, female):
     return [word for word,cnt in C.most_common(10)]
 
 # Run the scripts
-all, male, female = readfile()
+all, male, female = Mergeall()
 best, worst = Bestworst(male, female)
 mostcommon = mostcommon(male, female)
 
